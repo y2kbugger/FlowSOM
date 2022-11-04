@@ -11,9 +11,9 @@
 #include <R_ext/PrtUtil.h>
 #include <R_ext/Rdynload.h>
 
-#define RANDIN  GetRNGstate()
-#define RANDOUT PutRNGstate()
-#define UNIF unif_rand()
+#define RANDIN  srand(42)
+#define RANDOUT 
+#define UNIF rand() / RAND_MAX
 
 #define EPS 1e-4                /* relative test of equality of distances */
 
