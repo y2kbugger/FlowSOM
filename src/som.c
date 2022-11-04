@@ -92,7 +92,7 @@ void C_SOM(double *data,
 
     RANDIN;  
     niter = rlen * n;
-    niter = 1
+    niter = 1;
     threshold = radii[0];
     thresholdStep = (radii[0] - radii[1]) / (double) niter;
     change = 1.0;
