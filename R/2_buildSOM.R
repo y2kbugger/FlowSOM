@@ -187,7 +187,7 @@ SOM <- function (data, xdim = 10, ydim = 10, rlen = 10, mst = 1,
       codes <- initf(data, xdim, ydim)
       message("Initialization ready\n")
     } else {
-      codes <- data[1:nCodes]
+      codes <- data[1:nCodes, , drop = FALSE]
       message("codes\n")
       message(str(codes))
     }
