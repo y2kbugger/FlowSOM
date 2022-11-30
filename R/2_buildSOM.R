@@ -188,8 +188,8 @@ SOM <- function (data, xdim = 10, ydim = 10, rlen = 10, mst = 1,
       message("Initialization ready\n")
     } else {
       codes <- data[1:nCodes]
-      cat("codes\n")
-      print(codes)
+      message("codes\n")
+      message(str(codes))
     }
   }
   
